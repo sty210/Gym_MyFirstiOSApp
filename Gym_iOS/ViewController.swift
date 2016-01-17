@@ -12,14 +12,10 @@ class ViewController: UIViewController {
     
     @IBAction func moveBMI(sender:AnyObject){
     
-            //이동할 뷰 컨트롤러 인스턴스 생성
-            let uvc1 = self.storyboard?.instantiateViewControllerWithIdentifier("BMI01")
-            
-            //화면 전환 스타일 설정
-            //uvc1?.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-            
+        //이동할 뷰 컨트롤러 인스턴스 생성
+        let uvc1 = self.storyboard?.instantiateViewControllerWithIdentifier("BMI01")
+        
             //화면전환
-//            self.presentViewController(uvc1!, animated: true, completion: nil)
         self.navigationController?.pushViewController(uvc1!, animated: true)
     
     }

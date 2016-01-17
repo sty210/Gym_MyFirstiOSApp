@@ -9,6 +9,7 @@
 import UIKit
 
 class ExerciseImageListModel: NSObject {
-    var cellImageViewStr:String?
+    var id: Int?
+    var cellImageViewStr: String?
 }
 

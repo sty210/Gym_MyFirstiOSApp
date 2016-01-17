@@ -12,6 +12,7 @@ import UIKit
 class ExPtTableViewCell: UITableViewCell {
     @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    var id: Int?
     var cellImageViewStr: String?
     var nameLabelStr: String?
 }

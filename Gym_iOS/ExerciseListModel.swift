@@ -9,5 +9,5 @@
 import UIKit
 
 class ExerciseListModel: NSObject {
-    var nameLabelStr:String?
+    var nameLabelStr: String?
 }

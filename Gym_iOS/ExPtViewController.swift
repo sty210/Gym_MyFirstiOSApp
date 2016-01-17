@@ -88,6 +88,7 @@ class ExPtViewController: UIViewController, UITableViewDelegate, UITableViewData
                                         if let dict2 = rs2 as? NSDictionary {
                                             let ExImgModel = ExerciseImageListModel()
                                             ExImgModel.cellImageViewStr = dict2["ex_mth_img"] as? String
+                                            ExImgModel.id = dict2["ex_det_cd"] as? Int
                                             print(ExImgModel.cellImageViewStr)
                                             self.ExerciseImageListArray.append(ExImgModel)
                                         }
@@ -119,6 +120,7 @@ class ExPtViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         cell.nameLabel.text = ExerciseListArray[indexPath.row].nameLabelStr!;
         
+        cell.id = ExerciseImageListArray[indexPath.row].id!;
         let imagePath = ExerciseImageListArray[indexPath.row].cellImageViewStr!;
         
         Alamofire.request(.GET, imagePath).response() {
@@ -131,6 +133,15 @@ class ExPtViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if let cell = sender as? UITableViewCell {
+            let i = ExPtTableView.indexPathForCell(cell)!.row
+            if segue.identifier == "ToExMthVC2" {
+                let vc = segue.destinationViewController as! ExMthViewController
+                vc.id = ExerciseImageListArray[i].id
+            }
+        }
+    }
     
     
     @IBAction func backAction(sender: AnyObject) {

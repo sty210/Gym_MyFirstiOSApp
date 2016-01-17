@@ -88,7 +88,6 @@ class BMIViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 }
                 
                 let parameters = ["category": "exty", "id": self.Extype!]
-                
                 Alamofire.request(.GET, "http://gymdb.dev/commoncds.json", parameters: parameters)
                     .responseJSON {
                         response2 in
@@ -106,12 +105,12 @@ class BMIViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                                         if let dict2 = rs2 as? NSDictionary {
                                             let ExImgModel = ExerciseImageListModel()
                                             ExImgModel.cellImageViewStr = dict2["ex_mth_img"] as? String
+                                            ExImgModel.id = dict2["ex_det_cd"] as? Int
                                             print(ExImgModel.cellImageViewStr)
                                             self.ExerciseImageListArray.append(ExImgModel)
                                         }
                                     }
                                 }
-                                
                                 self.tableView.reloadData()
                                 
                             }
@@ -134,9 +133,9 @@ class BMIViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ExerciseTableViewCell", forIndexPath: indexPath) as! ExerciseTableViewCell
         
-        
         cell.nameLabel.text = ExerciseListArray[indexPath.row].nameLabelStr!;
         
+        cell.id = ExerciseImageListArray[indexPath.row].id;
         let imagePath = ExerciseImageListArray[indexPath.row].cellImageViewStr!;
         
         Alamofire.request(.GET, imagePath).response() {
@@ -146,7 +145,18 @@ class BMIViewController: UIViewController, UITableViewDelegate, UITableViewDataS
             cell.cellImageView.image = image
         }
         
+        
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if let cell = sender as? UITableViewCell {
+            let i = tableView.indexPathForCell(cell)!.row
+            if segue.identifier == "ToExMthVC" {
+                let vc = segue.destinationViewController as! ExMthViewController
+                vc.id = ExerciseImageListArray[i].id
+            }
+        }
     }
     
     
