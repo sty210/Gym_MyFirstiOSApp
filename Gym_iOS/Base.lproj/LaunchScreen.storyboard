@@ -21,11 +21,23 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'나중에'란 결코 오지 않습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afr-C4-S7c">
+                                <rect key="frame" x="158" y="74" width="285" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="ERE-M6-pra"/>
+                                    <constraint firstAttribute="height" constant="29" id="Zn4-uU-emE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.86753517670157065" green="0.86753517670157065" blue="0.86753517670157065" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ufg-hQ-OwL" secondAttribute="trailing" id="37S-b8-9Zc"/>
                             <constraint firstItem="ufg-hQ-OwL" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="89M-j1-YGU"/>
+                            <constraint firstItem="afr-C4-S7c" firstAttribute="centerX" secondItem="ufg-hQ-OwL" secondAttribute="centerX" id="CXF-lY-wmo"/>
+                            <constraint firstItem="afr-C4-S7c" firstAttribute="top" secondItem="ufg-hQ-OwL" secondAttribute="top" constant="10" id="NRl-8Y-lpS"/>
                             <constraint firstItem="ufg-hQ-OwL" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="knM-OD-Hp1"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ufg-hQ-OwL" secondAttribute="bottom" id="rBp-l7-nxZ"/>
                             <constraint firstItem="ufg-hQ-OwL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="zOb-md-JGN"/>

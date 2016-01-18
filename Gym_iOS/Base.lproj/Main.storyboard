@@ -125,25 +125,24 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oVo-cw-GHx">
-                                                            <rect key="frame" x="8" y="0.0" width="133" height="71"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="133" height="79"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="71" id="cYT-2r-ce4"/>
-                                                                <constraint firstAttribute="width" constant="133" id="yro-9z-gV8"/>
+                                                                <constraint firstAttribute="width" constant="133" id="JWU-7n-6I0"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="운동명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ID-8H-h2P">
-                                                            <rect key="frame" x="149" y="29" width="186" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="운동명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ID-8H-h2P">
+                                                            <rect key="frame" x="215" y="29" width="45" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="leadingMargin" secondItem="oVo-cw-GHx" secondAttribute="leading" id="ZXX-W4-3yF"/>
-                                                        <constraint firstItem="oVo-cw-GHx" firstAttribute="top" secondItem="nsN-KN-Ik2" secondAttribute="topMargin" constant="-8" id="iuC-GN-8rI"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="oVo-cw-GHx" secondAttribute="bottom" id="sr1-19-wjv"/>
-                                                        <constraint firstAttribute="leadingMargin" secondItem="oVo-cw-GHx" secondAttribute="leading" id="vGt-3G-Ta3"/>
-                                                        <constraint firstItem="oVo-cw-GHx" firstAttribute="top" secondItem="nsN-KN-Ik2" secondAttribute="topMargin" constant="-8" id="zkD-0r-T3U"/>
+                                                        <constraint firstItem="oVo-cw-GHx" firstAttribute="top" secondItem="nsN-KN-Ik2" secondAttribute="top" id="9HS-WV-2Qf"/>
+                                                        <constraint firstItem="4ID-8H-h2P" firstAttribute="centerX" secondItem="nsN-KN-Ik2" secondAttribute="centerX" constant="50" id="IFt-4n-Exs"/>
+                                                        <constraint firstAttribute="bottom" secondItem="oVo-cw-GHx" secondAttribute="bottom" id="d4N-kW-dCp"/>
+                                                        <constraint firstItem="oVo-cw-GHx" firstAttribute="leading" secondItem="nsN-KN-Ik2" secondAttribute="leading" id="d6a-FW-PNE"/>
+                                                        <constraint firstItem="4ID-8H-h2P" firstAttribute="centerY" secondItem="nsN-KN-Ik2" secondAttribute="centerY" id="vJt-qn-sHE"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -217,16 +216,26 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="운동명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctn-VQ-bD6">
-                                                            <rect key="frame" x="105" y="29" width="230" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="운동명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctn-VQ-bD6">
+                                                            <rect key="frame" x="215" y="29" width="45" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lcl-sN-V76">
-                                                            <rect key="frame" x="8" y="0.0" width="89" height="71"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lcl-sN-V76">
+                                                            <rect key="frame" x="0.0" y="0.0" width="133" height="79"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="133" id="AhK-Aa-Yda"/>
+                                                            </constraints>
                                                         </imageView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Ctn-VQ-bD6" firstAttribute="centerX" secondItem="Nle-Px-Qqj" secondAttribute="centerX" constant="50" id="ZR5-Mm-xo6"/>
+                                                        <constraint firstItem="Ctn-VQ-bD6" firstAttribute="centerY" secondItem="Nle-Px-Qqj" secondAttribute="centerY" id="cHn-nL-Pe5"/>
+                                                        <constraint firstItem="Lcl-sN-V76" firstAttribute="top" secondItem="Nle-Px-Qqj" secondAttribute="top" id="df8-Sr-5ce"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Lcl-sN-V76" secondAttribute="bottom" id="fCE-Ql-NXO"/>
+                                                        <constraint firstItem="Lcl-sN-V76" firstAttribute="leading" secondItem="Nle-Px-Qqj" secondAttribute="leading" id="tOY-pp-uAo"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="cellImageView" destination="Lcl-sN-V76" id="P8a-de-31B"/>
@@ -328,7 +337,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-aY-MO2">
                                         <rect key="frame" x="0.0" y="420" width="375" height="197"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">운동설명 : Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
